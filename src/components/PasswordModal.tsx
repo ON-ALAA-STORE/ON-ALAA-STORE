@@ -156,27 +156,6 @@ export const PasswordModal: React.FC<PasswordModalProps> = ({ onClose, onSuccess
             </button>
           </div>
         </form>
-
-        {/* Demo Helper Panel */}
-        <div className="border-t border-slate-800/60 pt-3">
-          <button
-            type="button"
-            onClick={() => setShowDemoAccounts(!showDemoAccounts)}
-            className="w-full flex items-center justify-between text-[9px] font-black uppercase tracking-widest text-slate-400 hover:text-white transition-colors"
-          >
-            <span className="flex items-center gap-1.5">
-              <KeyRound size={12} strokeWidth={2.5} className="text-amber-400" />
-              Demo Roles Reference
-            </span>
-            {showDemoAccounts ? <ChevronUp size={12} /> : <ChevronDown size={12} />}
-          </button>
-
-          {showDemoAccounts && (
-            <div className="mt-2.5 space-y-1.5 bg-[#1E293B]/60 rounded-2xl p-3 border border-slate-800 animate-slide-down">
-              <p className="text-[8px] text-slate-400 font-bold uppercase tracking-wider mb-1 text-center">
-                Click any role to autofill credentials:
-              </p>
-              
               {/* Super Admin option */}
               <button
                 type="button"
